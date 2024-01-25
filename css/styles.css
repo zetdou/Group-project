@@ -9,8 +9,63 @@ ul, ol {
 
 body {
     font-family: "Montsterrat", sans-serif;
+    color: black;
   }
-
-
+.container {
+  max-width: 288px;
+  margin: 24px;
+}
+.about {
+  height: 395px;
+}
+.about-div {
+  padding-top: 61px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  width: 183px;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
   
+/*tablet*/
+@media (min-width: 768px) {
+.container {
+  max-width: 720px;
+}
+.about-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+.text {
+  width: 320px;
+  font-size: 20px;
+}
 
+/*desktop*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1232px;
+  }
+  .text {
+    font-size: 22px;
+    width:  510px;
+  }
+}
