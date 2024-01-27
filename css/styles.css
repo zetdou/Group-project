@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 768px;
+    max-width: 480px;
     padding: 0 16px;
     margin: 0 auto;
   }
@@ -66,7 +66,7 @@ body {
 }
 
 .store-list-item {
-  flex-basis: 100%;
+  width: 136px;
 }
 
 .store-wrapper {
@@ -102,6 +102,10 @@ body {
   height: 44px;
 }
 
+@media (min-width: 462px) {
+
+}
+
 @media (min-width: 768px) {
   .container {
     width: 100%;
@@ -116,10 +120,26 @@ body {
     height: 1px;
     width: 100%;
   }
+
+  .store-list-item img {
+    width: 344px;
+    height: 399px;
+  }
+
+  .store-list-item {
+    width: 344px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .store-list-item img {
+    width: 600px;
+    height: 542px;
+  }
 
+  .store-list-item {
+    width: 600px;
+  }
 }
 
 
