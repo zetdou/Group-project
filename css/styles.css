@@ -65,10 +65,6 @@ body {
   font-weight: 600;
 }
 
-.store-list-item {
-  width: 136px;
-}
-
 .store-wrapper {
   display: flex;
   align-items: center;
@@ -113,9 +109,21 @@ body {
     padding: 0 16px;
     margin: 0 auto;
   }
+  
+  .section-title {
+    font-size: 44px;
+  }
+
+  .store-item-header {
+    font-size: 32px;
+  }
+
+  .store-item-text {
+    font-size: 24px;
+  }
 
   .store-line {
-    display: block;
+    display: flex;
     background: #000;
     height: 1px;
     width: 100%;
@@ -126,9 +134,6 @@ body {
     height: 399px;
   }
 
-  .store-list-item {
-    width: 344px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -137,9 +142,14 @@ body {
     height: 542px;
   }
 
-  .store-list-item {
-    width: 600px;
+  .store-item-header {
+    font-size: 36px;
   }
+
+  .store-item-text {
+    font-size: 26px;
+  }
+
 }
 
 
